@@ -49,15 +49,17 @@ const Login = () => {
                         />
                     </FormControl>
 
-                    <Typography variant="body2" onClick={() => router('/signup')} style={{ cursor: 'pointer' }} gutterBottom>
-                        Register Now
-                    </Typography>
-
-                    <FormControl sx={{ m: 1, width: '40ch' }} variant="standard">
+                    <FormControl sx={{ m: 1, width: '40ch',marginTop:'20px' }} variant="standard">
                         <Button variant="contained" >
                             Login
                         </Button>
                     </FormControl>
+
+
+
+                    <Button size='small' onClick={() => router("/register")} style={{ cursor: 'pointer' }}>
+                        Register Now
+                    </Button>
 
                 </Paper>
             </Box >

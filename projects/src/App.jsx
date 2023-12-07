@@ -1,9 +1,11 @@
 // import logo from './logo.svg';
-import './App.css';
+// import './App.css';
 import { Routes, Route } from 'react-router-dom'
 import Homepage from './Components/Homepage';
-import Login from './Components/login/Login';
-import Signup from './Components/signup/Signup';
+import Login from './Components/muiForm/Login';
+import Register from './Components/muiForm/Register';
+import SignUp from './Components/form/signUp/SignUp';
+import SignIn from './Components/form/signIn/SignIn';
 
 function App() {
   return (
@@ -11,7 +13,9 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Homepage />} />
         <Route exact path="/login" element={<Login />} />
-        <Route exact path="/signup" element={<Signup />} />
+        <Route exact path="/register" element={<Register />} />
+        <Route exact path="/sign-up" element={<SignUp />} />
+        <Route exact path="/sign-in" element={<SignIn />} />
       </Routes>
     </div>
   );

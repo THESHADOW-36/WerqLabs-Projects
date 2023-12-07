@@ -5,7 +5,7 @@ const Homepage = () => {
     const router =  useNavigate();
   return (
     <div>
-        <button onClick={()=>router('/login')}>Login</button>
+        <button onClick={()=>router('/sign-up')}>Login</button>
     </div>
   )
 }
