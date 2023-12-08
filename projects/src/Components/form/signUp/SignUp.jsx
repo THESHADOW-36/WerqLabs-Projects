@@ -1,6 +1,10 @@
 import React from 'react'
 import "./SignUp.css"
 import { useNavigate } from 'react-router-dom'
+// import {Button} from 'react-bootstrap'
+
+// import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/js/bootstrap.bundle.min";
 
 const SignUp = () => {
   const router = useNavigate();
@@ -42,7 +46,7 @@ const SignUp = () => {
                 <option value="Gremany">+49 (Gremany)</option>
                 <option value="Japan">+81 (Japan)</option>
               </select>
-             <input className='su-number-input' type="number" maxLength="10"/>
+              <input className='su-number-input' type="number" maxLength="10" />
             </div>
           </div>
 
@@ -74,7 +78,9 @@ const SignUp = () => {
             <input type="submit" value="Register" />
           </div>
 
-          <h4 className='su-to-si' onClick={()=>router('/sign-in')}>Already registered? Click here to Sign In</h4>
+          {/* <Button></Button> */}
+
+          <h4 className='su-to-si' onClick={() => router('/sign-in')}>Already registered? Click here to Sign In</h4>
         </form>
       </div>
     </div>

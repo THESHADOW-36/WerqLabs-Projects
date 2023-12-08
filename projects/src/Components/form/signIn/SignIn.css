@@ -114,10 +114,12 @@
     font-size: 14px;
     margin: 10px 0px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .si-to-si:hover {
     color: rgb(0, 21, 255);
+    transform: scale(1.05);
 }
 
 
