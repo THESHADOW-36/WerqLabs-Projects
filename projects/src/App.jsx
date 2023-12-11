@@ -1,6 +1,8 @@
 // import logo from './logo.svg';
 // import './App.css';
 import { Routes, Route } from 'react-router-dom'
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 import Homepage from './Components/Homepage';
 import Login from './Components/muiForm/Login';
 import Register from './Components/muiForm/Register';
