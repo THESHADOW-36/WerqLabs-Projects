@@ -1,0 +1,26 @@
+.dashboard-layout {
+    background-color: rgba(81, 138, 96, 255);
+    width: 210px;
+    height: 100vh;
+}
+
+.dashboard {
+    color: white;
+    padding-top: 16px;
+}
+
+.hrms-logo-white {
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hrms-logo-white>img {
+    width: 110px;
+}
+
+.db-category-content {
+    border: 1px solid white;
+    display: flex;
+}

@@ -1,0 +1,151 @@
+.login-layout {
+    background-color: rgb(244, 244, 244);
+    /* border: 1px solid black; */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.form-layout {
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    min-width: 28%;
+    margin: auto;
+}
+
+.form-content {
+    box-shadow: -1px 1px 6px -1px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+}
+
+.form-header {
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    background-color: rgba(81, 138, 96, 255);
+    color: white;
+    position: relative;
+    padding: 20px 26px;
+}
+
+.form-header>h4 {
+    font-size: 15px;
+}
+
+.form-header>p {
+    font-size: 12px;
+}
+
+.hrms-logo {
+    background-color: rgb(213, 213, 213);
+    position: absolute;
+    bottom: -32px;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hrms-logo>img {
+    width: 40px;
+    height: 40px;
+}
+
+.form-body {
+    /* border: 1px solid black; */
+    background-color: white;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    padding: 30px 26px 40px 26px;
+}
+
+.form-body label {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.form-label {
+    margin-top: 20px;
+}
+
+.hide-icon {
+    border: 1px solid rgb(222, 226, 230);
+    background-color: rgb(213, 213, 213);
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.hide-icon:hover {
+    background-color: rgb(191, 191, 191);
+}
+
+.hide-icon>img {
+    width: 16px;
+    height: 16px;
+}
+
+.form-check {
+    margin-top: 10px;
+}
+
+.form-check-input,
+.form-check-label {
+    cursor: pointer;
+}
+
+.login-button {
+    background-color: rgba(81, 138, 96, 255);
+    color: white;
+}
+
+.login-button:hover {
+    background-color: rgb(59, 101, 70);
+    color: white;
+}
+
+.forgot-your-password {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.forgot-icon>img {
+    /* border: 1px solid green; */
+    width: 14px;
+    height: 14px;
+    margin: -2px 4px 0px 0px;
+}
+
+.forgot-your-password>span {
+    /* border: 1px solid blue; */
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.copyright-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.copyright {
+    font-size: 10px;
+    margin-right: 4px;
+}
+
+.copyright-layout>p {
+    font-size: 12px;
+    margin: 0;
+}
+
+.heart {
+    color: rgba(196, 0, 0, 0.9);
+}

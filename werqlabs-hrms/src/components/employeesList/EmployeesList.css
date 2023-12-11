@@ -1,0 +1,9 @@
+.employeesList-layout {
+    height: 100vh;
+    display: flex;
+}
+
+.employeesList {
+    background-color: aqua;
+    width: 85%;
+}

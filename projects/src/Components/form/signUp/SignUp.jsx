@@ -46,7 +46,7 @@ const SignUp = () => {
                 <option value="Gremany">+49 (Gremany)</option>
                 <option value="Japan">+81 (Japan)</option>
               </select>
-              <input className='su-number-input' type="number" maxLength="10" />
+              <input className='su-number-input' type="number" />
             </div>
           </div>
 
