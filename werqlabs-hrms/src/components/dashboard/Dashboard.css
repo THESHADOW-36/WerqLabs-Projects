@@ -1,26 +1,60 @@
+.dashboard-navbar {
+	position: relative;
+	display: flex;
+}
+
 .dashboard-layout {
-    background-color: rgba(81, 138, 96, 255);
-    width: 210px;
-    height: 100vh;
+	background-color: rgba(81, 138, 96, 255);
+	position: relative;
+	min-width: 217px;
+	height: 100vh;
 }
 
 .dashboard {
-    color: white;
-    padding-top: 16px;
+	color: white;
+	padding-top: 16px;
 }
 
 .hrms-logo-white {
-    border: 1px solid white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	/* border: 1px solid white; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .hrms-logo-white>img {
-    width: 110px;
+	width: 110px;
+}
+
+.db-category {
+	/* border: 1px solid white; */
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding-left: 26px;
+	margin-top: 50px;
 }
 
 .db-category-content {
-    border: 1px solid white;
-    display: flex;
+	/* border: 1px solid white; */
+	display: flex;
+	align-items: center;
+	margin-bottom: 8px;
+	cursor: pointer;
 }
+
+.db-category-img>img {
+	/* border: 1px solid black; */
+	width: 23px;
+	height: 23px;
+	margin-top: -4px;
+	margin-right: 16px;
+}
+
+.db-category-name {
+	font-size: 12px;
+	letter-spacing: 0.3px;
+	margin: 0;
+}
+
