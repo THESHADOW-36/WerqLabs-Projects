@@ -1,18 +1,19 @@
 .dashboard-navbar {
-	position: relative;
 	display: flex;
 }
 
 .dashboard-layout {
 	background-color: rgba(81, 138, 96, 255);
-	position: relative;
-	min-width: 217px;
+	position: sticky;
+	top: 0;
+	left: 0;
+	width: 217px;
 	height: 100vh;
 }
 
 .dashboard {
 	color: white;
-	padding-top: 16px;
+	padding-top: 17px;
 }
 
 .hrms-logo-white {
@@ -20,10 +21,11 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	padding-right: 4px;
 }
 
 .hrms-logo-white>img {
-	width: 110px;
+	width: 108px;
 }
 
 .db-category {
@@ -32,15 +34,15 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	padding-left: 26px;
-	margin-top: 50px;
+	padding-left: 28px;
+	margin-top: 54px;
 }
 
 .db-category-content {
 	/* border: 1px solid white; */
 	display: flex;
 	align-items: center;
-	margin-bottom: 8px;
+	margin-bottom: 9px;
 	cursor: pointer;
 }
 
@@ -49,12 +51,63 @@
 	width: 23px;
 	height: 23px;
 	margin-top: -4px;
-	margin-right: 16px;
+	margin-right: 18px;
 }
 
 .db-category-name {
-	font-size: 12px;
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 11px;
 	letter-spacing: 0.3px;
 	margin: 0;
 }
 
+
+
+
+
+.mini-dashboard-layout {
+	background-color: rgb(81, 138, 96);
+	position: sticky;
+	top: 0;
+	left: 0;
+	height: 100vh;
+}
+
+.mini-dashboard {
+	color: white;
+	padding-top: 17px;
+}
+
+.mini-hrms-logo-white {
+	/* border: 1px solid white; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.mini-hrms-logo-white>img {
+	width: 30px;
+}
+
+.mini-db-category {
+	/* border: 1px solid white; */
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 14px;
+	margin-top: 54px;
+}
+
+.mini-db-category-img{
+	margin-bottom: 12px;
+}
+
+.mini-db-category-img>img {
+	/* border: 1px solid black; */
+	width: 26px;
+	height: 26px;
+	margin-top: -4px;
+	cursor: pointer;
+}
