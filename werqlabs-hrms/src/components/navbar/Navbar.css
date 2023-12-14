@@ -17,7 +17,7 @@
     padding: 0px 14px;
 }
 
-.nb-menu{
+.nb-menu {
     cursor: pointer;
 }
 
@@ -56,4 +56,22 @@
     margin-right: 2px;
     margin-bottom: 4px;
     cursor: pointer;
+}
+
+
+@media screen and (max-width:576px) {
+
+    .navbar-layout {
+        width: 100%;
+    }
+
+    .nb-search-bar-layout {
+        /* border: 1px solid green; */
+        width: 76%;
+        justify-content: space-between;
+    }
+
+    .nb-search-bar-input>input {
+        font-size: 12px;
+    }
 }

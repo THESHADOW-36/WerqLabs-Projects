@@ -22,6 +22,7 @@
 	align-items: center;
 	justify-content: center;
 	padding-right: 4px;
+	cursor: pointer;
 }
 
 .hrms-logo-white>img {
@@ -83,10 +84,15 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	cursor: pointer;
 }
 
 .mini-hrms-logo-white>img {
-	width: 30px;
+	width: 28px;
+}
+
+.db-close-button {
+	display: none;
 }
 
 .mini-db-category {
@@ -100,14 +106,74 @@
 	margin-top: 54px;
 }
 
-.mini-db-category-img{
+.mini-db-category-img {
 	margin-bottom: 12px;
 }
 
 .mini-db-category-img>img {
 	/* border: 1px solid black; */
-	width: 26px;
-	height: 26px;
+	width: 23px;
+	height: 23px;
 	margin-top: -4px;
 	cursor: pointer;
+}
+
+@media screen and (max-width:576px) {
+
+	.dashboard-layout {
+		position: fixed;
+		width: 100%;
+		z-index: 5;
+	}
+
+	.db-logo-close {
+		display: grid;
+		grid-template-columns: 5fr 1fr;
+	}
+
+	/* .db-empty {
+        border: 1px solid red;
+    } */
+
+	/* .hrms-logo-white {
+        border: 1px solid green;
+    } */
+
+	.db-close-button {
+		/* border: 1px solid blue; */
+		display: flex;
+		align-items: center;
+		padding-top: 4px;
+	}
+
+
+	.hrms-logo-white>img {
+		width: 130px;
+	}
+
+	.db-category {
+		/* border: 1px solid red; */
+		padding-left: 0;
+	}
+
+	.db-category-content {
+		/* border: 1px solid green; */
+		width: 70%;
+		margin: 0 auto 14px;
+	}
+
+
+	.db-category-img>img {
+		/* border: 1px solid black; */
+		width: 30px;
+		height: 30px;
+	}
+
+	.db-category-name {
+		font-size: 16px;
+	}
+
+	.mini-dashboard-layout {
+		display: none;
+	}
 }

@@ -3,8 +3,10 @@ import "./Login.css"
 import hrmsLogo from './../../icons/HRMS-SYMBOL-BLACK.png'
 import hideIcon from './../../icons/hide-icon.png'
 import forgotIcon from './../../icons/forgot-icon.png'
+import { useNavigate } from 'react-router-dom'
 
 const Login = () => {
+	const router = useNavigate();
 	return (
 		<div className='login-layout'>
 			<div className='form-layout '>
@@ -13,7 +15,7 @@ const Login = () => {
 					<div className='form-header'>
 						<h4>Welcome Back!</h4>
 						<p>Sign in to continue to HRMS</p>
-						<div className='hrms-logo'>
+						<div className='hrms-logo' onClick={() => router('/')}>
 							<img src={hrmsLogo} alt="" />
 						</div>
 					</div>

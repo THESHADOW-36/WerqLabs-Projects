@@ -52,6 +52,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	cursor: pointer;
 }
 
 .hrms-logo>img {
@@ -289,8 +290,8 @@
 		display: block;
 		text-align: center;
 	}
-	
-	.copyright{
+
+	.copyright {
 		font-size: 12px;
 	}
 }

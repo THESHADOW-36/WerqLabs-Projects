@@ -1,5 +1,5 @@
 .employeesList-layout {
-    /* height: 100vh; */
+    height: 100%;
     display: flex;
     position: relative;
 }
@@ -39,8 +39,8 @@
 }
 
 .el-search-bar-content {
-    /* background-color: rgb(241, 241, 241); */
     border: 1px solid rgb(206, 212, 218);
+    background-color: white;
     border-radius: 4px;
     display: flex;
     align-items: center;
@@ -64,6 +64,10 @@
 .el-notification-logo {
     margin-bottom: 4px;
     cursor: pointer;
+}
+
+.el-export-import-add {
+    display: flex;
 }
 
 .el-export-icon {
@@ -110,6 +114,14 @@
     margin-left: 14px;
 }
 
+.el-add-employee-button-phone {
+    display: none;
+}
+
+
+
+
+
 .el-data {
     /* border: 1px solid black; */
     box-shadow: 0px 0px 5px 0px rgba(151, 151, 151, 0.3);
@@ -127,13 +139,13 @@
     margin-bottom: 0;
 }
 
+thead>tr>th {
+    color: rgb(55, 55, 55);
+}
+
 tbody>tr>td {
     padding: 5px;
     cursor: pointer;
-}
-
-thead>tr>th {
-    color: rgb(55, 55, 55);
 }
 
 thead>tr>th:nth-child(1) {
@@ -250,4 +262,102 @@ thead>tr>th:last-child {
 
 .el-pn-left-arrow {
     background-color: rgb(151, 151, 151);
+}
+
+
+
+
+@media screen and (max-width:768px) {}
+
+@media screen and (max-width:576px) {
+    .employeesList-content {
+        width: 100%;
+        margin: 0;
+    }
+
+    .employeesList-header {
+        /* border: 1px solid black; */
+        flex-direction: column;
+    }
+
+    .employeesList-header>p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .el-search-bar-layout {
+        /* border: 1px solid black; */
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .el-search-bar-content {
+        /* border: 1px solid red; */
+        width: 50%;
+        justify-content: space-between;
+    }
+
+    .el-search-bar-input>input {
+        font-size: 12px;
+        width: 100%;
+    }
+
+    .el-search-bar-logo {
+        /* border: 1px solid blue; */
+        margin-right: 0;
+        margin-top: -1px;
+    }
+
+    .el-export-import-add {
+        /* border: 1px solid blue; */
+        width: 120px;
+        justify-content: space-between;
+    }
+
+    .el-export-icon {
+        margin-left: 0;
+    }
+
+    .el-import-icon {
+        margin-left: 0;
+    }
+
+    .el-add-employee-button {
+        display: none;
+    }
+
+    .el-add-employee-button-phone {
+        border: 2px solid rgb(151, 151, 151);
+        background-color: white;
+        color: rgb(151, 151, 151);
+        border-radius: 4px;
+        min-width: 29px;
+        display: block;
+        font-size: 17px;
+        font-weight: 600;
+        font-weight: 600;
+    }
+
+    thead>tr>th {
+        text-wrap: nowrap;
+    }
+
+    tbody>tr>td {
+        text-wrap: nowrap;
+    }
+
+    .table {
+        font-size: 12px;
+    }
+
+    .el-pagination-count {
+        font-size: 12px;
+    }
+
+    .el-pn-left-arrow,
+    .el-pn-right-arrow,
+    .el-pn-num {
+        font-size: 12px;
+        margin-left: 9px;
+    }
 }

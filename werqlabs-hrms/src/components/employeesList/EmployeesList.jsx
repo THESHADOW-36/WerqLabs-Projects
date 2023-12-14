@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import "./EmployeesList.css"
 import Dashboard from '../dashboard/Dashboard'
 import Navbar from '../navbar/Navbar'
@@ -6,13 +6,9 @@ import { SearchBarLogo, ArrowRight, ArrowLeft } from '../../icons/icons'
 import ExportIcon from './../../icons/export-icon.png'
 import ImportIcon from './../../icons/import-icon.png'
 import EditEmployeeIcon from './../../icons/edit-employee-icon.png'
+import { MyContext } from '../context/GobalContext'
 
 const EmployeesList = () => {
-
-	const [menuToggle, setMenuToggle] = useState(false)
-	console.log(menuToggle)
-
-
 	// eslint-disable-next-line
 	const [employeesData, setEmployeesData] = useState([
 		{
@@ -167,13 +163,15 @@ const EmployeesList = () => {
 		},
 	])
 
+	const { menuToggle, setMenuToggle, menuBarToggle } = useContext(MyContext)
+
+
 	return (
 		<>
 			<div className='employeesList-layout'>
-				<Dashboard menuToggle={menuToggle} />
-
+				<Dashboard />
 				<div className='employeesList'>
-					<Navbar setMenuToggle={setMenuToggle} menuToggle={menuToggle} />
+					<Navbar />
 					<div className='employeesList-content'>
 						<div className='employeesList-header'>
 							<p>Employees</p>
@@ -182,12 +180,14 @@ const EmployeesList = () => {
 									<div className='el-search-bar-input'><input type="text" placeholder='Search...' /></div>
 									<div className='el-search-bar-logo'><SearchBarLogo /></div>
 								</div>
+								<div className='el-export-import-add'>
+									<div className='el-export-icon'><img src={ExportIcon} alt="asdf" /></div>
 
-								<div className='el-export-icon'><img src={ExportIcon} alt="asdf" /></div>
+									<div className='el-import-icon'><img src={ImportIcon} alt="" /></div>
 
-								<div className='el-import-icon'><img src={ImportIcon} alt="" /></div>
-
-								<button className='el-add-employee-button'>Add Employee</button>
+									<button className='el-add-employee-button'>Add Employee</button>
+									<button className='el-add-employee-button-phone'>+</button>
+								</div>
 							</div>
 						</div>
 

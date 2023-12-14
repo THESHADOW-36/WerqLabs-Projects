@@ -1,11 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import "./Navbar.css"
 import { NotificationLogo, SearchBarLogo } from '../../icons/icons'
+import { MyContext } from '../context/GobalContext'
 
-const Navbar = ({ menuToggle, setMenuToggle }) => {
-    function menuBarToggle() {
-        setMenuToggle(!menuToggle)
-    }
+const Navbar = () => {
+    const {menuBarToggle} = useContext(MyContext)
 
     return (
         <div className="navbar-layout">
