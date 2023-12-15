@@ -181,7 +181,7 @@ const EmployeesList = () => {
 									<div className='el-search-bar-logo'><SearchBarLogo /></div>
 								</div>
 								<div className='el-export-import-add'>
-									<div className='el-export-icon'><img src={ExportIcon} alt="asdf" /></div>
+									<div className='el-export-icon'><img src={ExportIcon} alt="" /></div>
 
 									<div className='el-import-icon'><img src={ImportIcon} alt="" /></div>
 
