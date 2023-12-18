@@ -20,140 +20,152 @@ const Homepage = () => {
         <Navbar />
         <div className='homepage-content'>
           <div className="hp-top row">
-            
-            <div className="hp-top-col-1 col-12 col-md-4">
+
+            <div className='hp-top-col'>
               <div className="row">
-                <div className="small-block-container-1 col col-6">
-                  <div className="small-block">
-                    <div className='small-block-text'>
-                      <p>Total People</p>
-                      <h4>267</h4>
+                <div className="col">
+                  <div className="small-block-layout row">
+                    <div className="small-block-container-1 col col-6">
+                      <div className="small-block">
+                        <div className='small-block-text'>
+                          <p>Total People</p>
+                          <h4>267</h4>
+                        </div>
+                        <div className='small-block-img'><img src={TotalEmployeeIcon} alt="" /></div>
+                      </div>
                     </div>
-                    <div className='small-block-img'><img src={TotalEmployeeIcon} alt="" /></div>
+
+                    <div className="small-block-container-2 col col-6">
+                      <div className="small-block">
+                        <div className='small-block-text'>
+                          <p>New Joniees</p>
+                          <h4>14</h4>
+                        </div>
+                        <div className='small-block-img'><img src={NewJoineesIcon} alt="" /></div>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
-                <div className="small-block-container-2 col col-6">
-                  <div className="small-block">
-                    <div className='small-block-text'>
-                      <p>New Joniees</p>
-                      <h4>14</h4>
+                <div className='sbl col'>
+                  <div className="small-block-layout row">
+                    <div className="small-block-container-1 col col-6">
+                      <div className="small-block">
+                        <div className='small-block-text'>
+                          <p>People Present</p>
+                          <h4>192</h4>
+                        </div>
+                        <div className='small-block-img-3'><img src={PeoplePresentIcon} alt="" /></div>
+                      </div>
                     </div>
-                    <div className='small-block-img'><img src={NewJoineesIcon} alt="" /></div>
+
+                    <div className="small-block-container-2 col col-6">
+                      <div className="small-block">
+                        <div className='small-block-text'>
+                          <p>Remote</p>
+                          <h4>43</h4>
+                        </div>
+                        <div className='small-block-img-4'><img src={RemoteIcon} alt="" /></div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div className="medium-block-container row">
-                <div className='upcoming-event-text'>
-                  <p>Upcoming Events</p>
-                  <span>This Month</span>
+
+
+              <div className='medium-block-layout row'>
+                <div className="hp-top-col-1 col-12">
+                  <div className="medium-block-container row">
+                    <div className='upcoming-event-text'>
+                      <p>Upcoming Events</p>
+                      <span>This Month</span>
+                    </div>
+                    <div className='upcoming-event-task-layout'>
+                      <div className='upcoming-event-task'>
+                        <div className='uet-pointer'><i class="fa-regular fa-circle-right"></i></div>
+                        <p className="uet-date">23 Jun</p>
+                        <div className='uet-arrow-right'><i class="fa-solid fa-arrow-right fa-sm"></i></div>
+                        <p className="uet-description">Diversity Workshop</p>
+                      </div>
+                      <div className='upcoming-event-task'>
+                        <div className='uet-pointer'><i class="fa-regular fa-circle-right"></i></div>
+                        <p className="uet-date">12 Jun</p>
+                        <div className='uet-arrow-right'><i class="fa-solid fa-arrow-right fa-sm"></i></div>
+                        <p className="uet-description">Welliness Fair: Boost your well-being with fitness challenges and information sessions.</p>
+                      </div>
+                      <div className='upcoming-event-task'>
+                        <div className='uet-pointer'><i class="fa-regular fa-circle-right"></i></div>
+                        <p className="uet-date">09 Jun</p>
+                        <div className='uet-arrow-right'><i class="fa-solid fa-arrow-right fa-sm"></i></div>
+                        <p className="uet-description">Team Building Retreat: Strengthen teamwork and collaboration.</p>
+                      </div>
+                      <div className='upcoming-event-task'>
+                        <div className='uet-pointer'><i class="fa-regular fa-circle-right"></i></div>
+                        <p className="uet-date">02 Jun</p>
+                        <div className='uet-arrow-right'><i class="fa-solid fa-arrow-right fa-sm"></i></div>
+                        <p className="uet-description">Financial Planning Seminar: Gain valuable financial insights.</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div className='upcoming-event-task-layout'>
-                  <div className='upcoming-event-task'>
-                    <div className='uet-pointer'><i class="fa-regular fa-circle-right"></i></div>
-                    <p className="uet-date">23 Jun</p>
-                    <div className='uet-arrow-right'><i class="fa-solid fa-arrow-right fa-sm"></i></div>
-                    <p className="uet-description">Diversity Workshop</p>
-                  </div>
-                  <div className='upcoming-event-task'>
-                    <div className='uet-pointer'><i class="fa-regular fa-circle-right"></i></div>
-                    <p className="uet-date">12 Jun</p>
-                    <div className='uet-arrow-right'><i class="fa-solid fa-arrow-right fa-sm"></i></div>
-                    <p className="uet-description">Welliness Fair: Boost your well-being with fitness challenges and information sessions.</p>
-                  </div>
-                  <div className='upcoming-event-task'>
-                    <div className='uet-pointer'><i class="fa-regular fa-circle-right"></i></div>
-                    <p className="uet-date">09 Jun</p>
-                    <div className='uet-arrow-right'><i class="fa-solid fa-arrow-right fa-sm"></i></div>
-                    <p className="uet-description">Team Building Retreat: Strengthen teamwork and collaboration.</p>
-                  </div>
-                  <div className='upcoming-event-task'>
-                    <div className='uet-pointer'><i class="fa-regular fa-circle-right"></i></div>
-                    <p className="uet-date">02 Jun</p>
-                    <div className='uet-arrow-right'><i class="fa-solid fa-arrow-right fa-sm"></i></div>
-                    <p className="uet-description">Financial Planning Seminar: Gain valuable financial insights.</p>
+
+                <div className="hp-top-col-1 col-12">
+                  <div className="medium-block-container row">
+                    <div className='out-of-office-text'>
+                      <p>Who is out of Office</p>
+                    </div>
+
+                    <div className='out-of-office-layout'>
+                      <div className="out-of-office">
+                        <div className='off-date'>
+                          <p><i>Sick Leave</i></p>
+                          <p>Today</p>
+                        </div>
+                        <div className='off-member'>
+                          <div className='off-member-pro-pic'><img src={ProfilePic1} alt="" /></div>
+                          <div className='off-member-name-des'>
+                            <p className="off-member-name">Abby Normal</p>
+                            <p className="off-member-designation">Senior Frontend Developer</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="out-of-office">
+                        <div className='off-date'>
+                          <p><i>Vacation Days</i></p>
+                          <p>20/05/23 - 30/05/23</p>
+                        </div>
+
+                        <div className='off-member'>
+                          <div className='off-member-pro-pic-2'><img src={ProfilePic2} alt="" /></div>
+                          <div className='off-member-name-des'>
+                            <p className="off-member-name">Wynn Dozeaplikayshun</p>
+                            <p className="off-member-designation">Sales Team Lead</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="out-of-office">
+                        <div className='off-date'>
+                          <p><i>Vacation Days</i></p>
+                          <p>18/05/23 - 25/05/23</p>
+                        </div>
+
+                        <div className='off-member'>
+                          <div className='off-member-pro-pic'><img src={ProfilePic3} alt="" /></div>
+                          <div className='off-member-name-des'>
+                            <p className="off-member-name">Polly Ester Undawair</p>
+                            <p className="off-member-designation">Junior UI/UX Designer</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
+
             </div>
-
-            <div className="hp-top-col-1 col-12 col-md-4">
-              <div className="row">
-                <div className="small-block-container-1 col col-6">
-                  <div className="small-block">
-                    <div className='small-block-text'>
-                      <p>People Present</p>
-                      <h4>192</h4>
-                    </div>
-                    <div className='small-block-img-3'><img src={PeoplePresentIcon} alt="" /></div>
-                  </div>
-                </div>
-
-                <div className="small-block-container-2 col col-6">
-                  <div className="small-block">
-                    <div className='small-block-text'>
-                      <p>Remote</p>
-                      <h4>43</h4>
-                    </div>
-                    <div className='small-block-img-4'><img src={RemoteIcon} alt="" /></div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="medium-block-container row">
-                <div className='out-of-office-text'>
-                  <p>Who is out of Office</p>
-                </div>
-
-                <div className='out-of-office-layout'>
-                  <div className="out-of-office">
-                    <div className='off-date'>
-                      <p><i>Sick Leave</i></p>
-                      <p>Today</p>
-                    </div>
-                    <div className='off-member'>
-                      <div className='off-member-pro-pic'><img src={ProfilePic1} alt="" /></div>
-                      <div className='off-member-name-des'>
-                        <p className="off-member-name">Abby Normal</p>
-                        <p className="off-member-designation">Senior Frontend Developer</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="out-of-office">
-                    <div className='off-date'>
-                      <p><i>Vacation Days</i></p>
-                      <p>20/05/23 - 30/05/23</p>
-                    </div>
-
-                    <div className='off-member'>
-                      <div className='off-member-pro-pic-2'><img src={ProfilePic2} alt="" /></div>
-                      <div className='off-member-name-des'>
-                        <p className="off-member-name">Wynn Dozeaplikayshun</p>
-                        <p className="off-member-designation">Sales Team Lead</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="out-of-office">
-                    <div className='off-date'>
-                      <p><i>Vacation Days</i></p>
-                      <p>18/05/23 - 25/05/23</p>
-                    </div>
-
-                    <div className='off-member'>
-                      <div className='off-member-pro-pic'><img src={ProfilePic3} alt="" /></div>
-                      <div className='off-member-name-des'>
-                        <p className="off-member-name">Polly Ester Undawair</p>
-                        <p className="off-member-designation">Junior UI/UX Designer</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             <div className="hp-top-col-3">
               <div className='calendar-layout'>
                 <div className='calendar'>

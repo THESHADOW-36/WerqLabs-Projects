@@ -21,18 +21,43 @@ p {
 }
 
 .row,
-.col {
+.col,
+.col-3 {
     margin: 0;
     padding: 0;
 }
 
 .hp-top {
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+}
+
+.hp-top-col {
+    /* border: 1px solid blue; */
+    /* background-color: yellow; */
+    width: 70%;
+    padding: 0;
+}
+
+.sbl {
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.small-block-layout {
+    /* border: 1px solid red; */
+    width: 95.2%;
+}
+
+.medium-block-layout {
+    /* border: 1px solid black; */
     justify-content: space-between;
 }
 
 .hp-top-col-1 {
-    border: 2px solid orangered;
+    /* border: 2px solid orangered; */
+    width: 47.5%;
     padding: 0;
 }
 
@@ -464,7 +489,8 @@ p {
         flex-direction: column-reverse;
         align-items: center;
     }
-    .small-block-text{
+
+    .small-block-text {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -522,8 +548,8 @@ p {
     .out-of-office {
         margin-top: 26px;
     }
-    
-    .out-of-office-layout{
+
+    .out-of-office-layout {
         margin-top: 10px;
     }
 
@@ -539,12 +565,12 @@ p {
     .cal-table tr td {
         height: 36px;
     }
-    
+
     .ctl-content {
         grid-template-columns: 1fr 9fr 1fr;
     }
 
-    
+
     .ctl-icon {
         width: 36px;
         height: 3px;
@@ -558,13 +584,14 @@ p {
 }
 
 @media screen and (max-width:576px) {
-    
+
     .small-block {
         height: auto;
         flex-direction: row;
         align-items: center;
     }
-    .small-block-text{
+
+    .small-block-text {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
