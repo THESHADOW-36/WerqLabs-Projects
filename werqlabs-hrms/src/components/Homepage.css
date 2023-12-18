@@ -27,12 +27,12 @@ p {
 }
 
 .hp-top {
-    /* border: 1px solid red; */
+    border: 1px solid black;
     justify-content: space-between;
 }
 
 .hp-top-col-1 {
-    /* border: 2px solid orangered; */
+    border: 2px solid orangered;
     padding: 0;
 }
 
@@ -53,10 +53,105 @@ p {
     padding: 20px 20px;
 }
 
-.calendar {
-    border: 1px solid black;
-    height: 212px;
+.calendar-layout {
+    padding: 20px 24px;
 }
+
+.calendar {
+    /* border: 1px solid black; */
+    height: 212px;
+    padding: 0px 4px;
+}
+
+.cal-month {
+    font-size: 11px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 2px;
+}
+
+.cal-month-navigate-arrow {
+    color: rgb(151, 151, 151);
+}
+
+.cal-table {
+    /* border: 1px solid red; */
+    width: 100%;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.cal-table tr {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.cal-table tr td {
+    /* border: 1px solid blue; */
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cal-week-name {
+    color: rgb(151, 151, 151);
+}
+
+.cal-seleted-date {
+    background-color: rgb(81, 138, 96);
+    border-radius: 50px;
+    color: white;
+    width: 26px;
+    font-size: 11px;
+    font-weight: 300;
+    margin: auto;
+}
+
+
+.ctlt {
+    margin-bottom: 14px;
+}
+
+.ctl-content {
+    font-size: 11px;
+    display: grid;
+    grid-template-columns: 1fr 3.8fr 1fr;
+    align-items: center;
+}
+
+/* .ctl-icon-lay {
+    border: 1px solid red;
+} */
+
+.ctl-icon {
+    background-color: rgb(252, 241, 223);
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ctl-icon>img {
+    width: 16px;
+    height: 16px;
+}
+
+.ctl-name {
+    /* border: 1px solid green; */
+    font-weight: 600;
+}
+
+.ctl-date {
+    /* border: 1px solid blue; */
+    color: rgb(151, 151, 151);
+}
+
+
 
 .small-block {
     box-shadow: 0px 0px 6px 0px rgba(151, 151, 151, 0.25);
@@ -228,6 +323,7 @@ p {
 .off-member-designation {
     color: rgb(151, 151, 151);
     font-size: 9px;
+    letter-spacing: -0.3px;
 }
 
 
@@ -325,4 +421,267 @@ p {
 .last-description {
     text-decoration-line: line-through;
     color: rgb(244, 106, 106);
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:940px) {
+
+    .hp-top-col-1 {
+        width: 48%;
+    }
+
+    .hp-top-col-3,
+    .calendar-layout,
+    .announcements-layout,
+    .task-list-layout,
+    .task-list {
+        width: 100%;
+    }
+
+    .hp-top-col-1,
+    .announcements-layout {
+        margin-bottom: 28px;
+    }
+
+
+
+
+    .off-member-pro-pic,
+    .off-member-pro-pic-2 {
+        width: 50px;
+        height: 50px;
+    }
+
+    .small-block {
+        height: auto;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .small-block-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .small-block-img,
+    .small-block-img-3,
+    .small-block-img-4 {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+
+    .small-block-img>img,
+    .small-block-img-3>img,
+    .small-block-img-4>img {
+        width: 30px;
+        height: 30px;
+    }
+
+
+
+
+
+    .upcoming-event-text>p,
+    .out-of-office-text>p,
+    .announcements-text>p,
+    .task-list-text>p,
+    .cal-table,
+    .cal-month {
+        font-size: 17px;
+    }
+
+    .announcement-add-new-button,
+    .upcoming-event-task,
+    .announcements-task,
+    .small-block-text>p,
+    .cal-seleted-date,
+    .ctl-content,
+    .task {
+        font-size: 15px;
+    }
+
+    .off-member-name {
+        font-size: 16px;
+    }
+
+    .upcoming-event-text>span,
+    .off-member-designation,
+    .off-date {
+        font-size: 14px;
+    }
+
+    .out-of-office {
+        margin-top: 26px;
+    }
+    
+    .out-of-office-layout{
+        margin-top: 10px;
+    }
+
+    .off-member {
+        margin-top: 6px;
+    }
+
+    .calendar {
+        height: max-content;
+        padding-bottom: 20px;
+    }
+
+    .cal-table tr td {
+        height: 36px;
+    }
+    
+    .ctl-content {
+        grid-template-columns: 1fr 9fr 1fr;
+    }
+
+    
+    .ctl-icon {
+        width: 36px;
+        height: 3px;
+    }
+
+    .ctl-icon>img {
+        width: 22px;
+        height: 22px;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    
+    .small-block {
+        height: auto;
+        flex-direction: row;
+        align-items: center;
+    }
+    .small-block-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .hp-top-col-1 {
+        width: 100%;
+    }
+
+    .small-block-container-1,
+    .small-block-container-2,
+    .small-block,
+    .hp-top-col-3,
+    .calendar-layout,
+    .announcements-layout,
+    .task-list-layout,
+    .task-list {
+        width: 100%;
+    }
+
+    .small-block-container-1,
+    .hp-top-col-1,
+    .announcements-layout {
+        margin-bottom: 28px;
+    }
+
+    .small-block {
+        /* border: 1px solid red; */
+        height: 100px;
+        padding: 20px 36px;
+        height: max-content;
+    }
+
+    .small-block-img,
+    .small-block-img-3,
+    .small-block-img-4 {
+        width: 60px;
+        height: 60px;
+    }
+
+    .small-block-img>img,
+    .small-block-img-3>img,
+    .small-block-img-4>img {
+        width: 30px;
+        height: 30px;
+    }
+
+
+    .off-member-pro-pic,
+    .off-member-pro-pic-2 {
+        width: 46px;
+        height: 46px;
+    }
+
+    .ctl-icon {
+        width: 34px;
+        height: 34px;
+    }
+
+    .ctl-icon>img {
+        width: 22px;
+        height: 22px;
+    }
+
+    .cal-table tr td {
+        height: 30px;
+    }
+
+    .cal-seleted-date {
+        width: 30px;
+    }
+
+    .upcoming-event-text>p,
+    .out-of-office-text>p,
+    .announcements-text>p,
+    .task-list-text>p,
+    .cal-table,
+    .cal-month {
+        font-size: 16px;
+    }
+
+    .announcement-add-new-button,
+    .upcoming-event-task,
+    .announcements-task,
+    .small-block-text>p,
+    .cal-seleted-date,
+    .ctl-content,
+    .task {
+        font-size: 14px;
+    }
+
+    .off-member-name {
+        font-size: 15px;
+    }
+
+    .upcoming-event-text>span,
+    .off-member-designation,
+    .off-date {
+        font-size: 12px;
+    }
+
+    .out-of-office {
+        margin-top: 26px;
+    }
+
+    .off-member {
+        margin-top: 6px;
+    }
+
+    .upcoming-event-task,
+    .announcements-task {
+        grid-template-columns: 20px 60px 26px 1fr;
+    }
+
+
+    .ctl-content {
+        grid-template-columns: 1fr 3fr 1fr;
+    }
 }

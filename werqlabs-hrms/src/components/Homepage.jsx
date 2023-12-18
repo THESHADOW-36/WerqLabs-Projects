@@ -6,6 +6,7 @@ import TotalEmployeeIcon from './../icons/total-employee-icon.png'
 import NewJoineesIcon from './../icons/new-joinees-icon.png'
 import PeoplePresentIcon from './../icons/people-present-icon.png'
 import RemoteIcon from './../icons/remote-icon.png'
+import HolidayIcon from './../icons/holiday-icon.png'
 import AddIcon from './../icons/add-icon.png'
 import ProfilePic1 from './../icons/profile-pic-1.png'
 import ProfilePic2 from './../icons/profile-pic-2.png'
@@ -19,10 +20,10 @@ const Homepage = () => {
         <Navbar />
         <div className='homepage-content'>
           <div className="hp-top row">
-
-            <div className="hp-top-col-1 col-4">
+            
+            <div className="hp-top-col-1 col-12 col-md-4">
               <div className="row">
-                <div className="small-block-container-1 col">
+                <div className="small-block-container-1 col col-6">
                   <div className="small-block">
                     <div className='small-block-text'>
                       <p>Total People</p>
@@ -32,7 +33,7 @@ const Homepage = () => {
                   </div>
                 </div>
 
-                <div className="small-block-container-2 col">
+                <div className="small-block-container-2 col col-6">
                   <div className="small-block">
                     <div className='small-block-text'>
                       <p>New Joniees</p>
@@ -77,9 +78,9 @@ const Homepage = () => {
               </div>
             </div>
 
-            <div className="hp-top-col-1 col-4">
+            <div className="hp-top-col-1 col-12 col-md-4">
               <div className="row">
-                <div className="small-block-container-1 col">
+                <div className="small-block-container-1 col col-6">
                   <div className="small-block">
                     <div className='small-block-text'>
                       <p>People Present</p>
@@ -89,7 +90,7 @@ const Homepage = () => {
                   </div>
                 </div>
 
-                <div className="small-block-container-2 col">
+                <div className="small-block-container-2 col col-6">
                   <div className="small-block">
                     <div className='small-block-text'>
                       <p>Remote</p>
@@ -156,13 +157,87 @@ const Homepage = () => {
             <div className="hp-top-col-3">
               <div className='calendar-layout'>
                 <div className='calendar'>
-                  Calendar
+                  <div className="cal-month">
+                    <div className='cal-month-navigate-arrow'><i class="fa-solid fa-angle-left"></i></div>
+                    <p>June 2023</p>
+                    <div className='cal-month-navigate-arrow'><i class="fa-solid fa-angle-right"></i></div>
+                  </div>
+                  <table className='cal-table'>
+                    <thead>
+                      <tr className='cal-week-name'>
+                        <td>M</td>
+                        <td>T</td>
+                        <td>W</td>
+                        <td>T</td>
+                        <td>F</td>
+                        <td>S</td>
+                        <td>S</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                      </tr>
+                      <tr>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                      </tr>
+                      <tr>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                      </tr>
+                      <tr>
+                        <td>26</td>
+                        <td>27</td>
+                        <td className='cal-seleted-date'>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
-                <div className='task-list-text'>
-                  <p>Holidays</p>
-                  <div className='announcement-add-new-button'>
-                    <div className='aanb-add-icon'><img src={AddIcon} alt="" /></div>
-                    <p>Add New</p>
+                <div className='calendar-task-list-layout'>
+                  <div className='task-list-text ctlt'>
+                    <p>Holidays</p>
+                    <div className='announcement-add-new-button'>
+                      <div className='aanb-add-icon'><img src={AddIcon} alt="" /></div>
+                      <p>Add New</p>
+                    </div>
+                  </div>
+
+                  <div className='ctl-content'>
+                    <div className='ctl-icon-lay'>
+                      <div className='ctl-icon'><img src={HolidayIcon} alt="" /></div>
+                    </div>
+                    <p className='ctl-name'>Eid-al-Adha</p>
+                    <p className='ctl-date'>29/06/23</p>
                   </div>
                 </div>
               </div>
