@@ -12,7 +12,7 @@ import ProfilePic1 from './../icons/profile-pic-1.png'
 import ProfilePic2 from './../icons/profile-pic-2.png'
 import ProfilePic3 from './../icons/profile-pic-3.png'
 
-const Homepage = () => {
+const Homepg = () => {
   return (
     <div className='homepage-layout'>
       <Dashboard />
@@ -22,7 +22,7 @@ const Homepage = () => {
           <div className="hp-top row">
 
             <div className='hp-top-col'>
-              <div className="row">
+              <div className="sbl-mobile row">
                 <div className="col">
                   <div className="small-block-layout row">
                     <div className="small-block-container-1 col col-6">
@@ -321,4 +321,4 @@ const Homepage = () => {
   )
 }
 
-export default Homepage
+export default Homepg
