@@ -1,11 +1,12 @@
 // import logo from './logo.svg';
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
+import { Stack } from '@mui/material';
 import Homepage from './components/Homepage';
 import MuiTypography from './components/MuiTypography';
 import MuiButton from './components/MuiButton';
-import { Stack } from '@mui/material';
 import MuiTextField from './components/MuiTextField';
+import MuiSelect from './components/MuiSelect';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route exact path="/typography" element={<MuiTypography />} />
         <Route exact path="/button" element={<MuiButton />} />
         <Route exact path="/text-field" element={<MuiTextField />} />
+        <Route exact path="/select" element={<MuiSelect />} />
       </Routes>
     </Stack>
   );

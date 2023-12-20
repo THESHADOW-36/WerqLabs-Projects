@@ -1,7 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Button, ButtonGroup, IconButton, Stack, ToggleButton, ToggleButtonGroup } from '@mui/material';
 import { KeyboardDoubleArrowLeft, KeyboardDoubleArrowRight, Send, FormatBold, FormatItalic, FormatUnderlined } from '@mui/icons-material';
 const MuiButton = () => {
+
+    const [formats, setFormats] = useState([]);
+    console.log(formats)
+
+    function handleChange(event, newFormats) {
+        setFormats(newFormats)
+    }
     return (
         <>
             <Stack spacing={2} direction='row' style={{ justifyContent: 'center' }}>
@@ -74,13 +81,13 @@ const MuiButton = () => {
                 </ButtonGroup>
             </Stack>
 
-            {/* <Stack spacing={2} direction='row' display='block' justifyContent='center' marginTop='20px'>
-                <ToggleButtonGroup aria-label='text formatting'>
+            <Stack spacing={2} direction='row' display='block' justifyContent='center' marginTop='20px'>
+                <ToggleButtonGroup aria-label='text formatting' onChange={handleChange} value={formats}>
                     <ToggleButton value='bold' aria-label='bold'><FormatBold /></ToggleButton>
-                    <ToggleButton><FormatItalic /></ToggleButton>
-                    <ToggleButton><FormatUnderlined /></ToggleButton>
+                    <ToggleButton value='italic' aria-label='italic'><FormatItalic /></ToggleButton>
+                    <ToggleButton value='underlined' aria-label='underlined'><FormatUnderlined /></ToggleButton>
                 </ToggleButtonGroup>
-            </Stack> */}
+            </Stack>
         </>
     )
 }
