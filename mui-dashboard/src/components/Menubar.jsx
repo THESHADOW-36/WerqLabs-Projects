@@ -1,11 +1,9 @@
 import React from 'react'
 import { Box, Drawer, List, ListItemButton, ListItemIcon, ListItemText, Stack, Typography } from '@mui/material';
 import { Diamond, DashboardOutlined, PendingActions, LocalShipping, People, CheckBoxOutlined, SettingsOutlined, HelpOutlineOutlined, LogoutOutlined } from '@mui/icons-material';
-import { useNavigate } from 'react-router-dom';
 
 
 const Menubar = ({ menubarToggle, setMenubarToggle }) => {
-   const router = useNavigate();
 
    const menuList1 = [
       {
@@ -51,7 +49,7 @@ const Menubar = ({ menubarToggle, setMenubarToggle }) => {
    return (
       <>
          <Box>
-            <Drawer open={menubarToggle} onClose={() => setMenubarToggle(false)} variant='permanent'>
+            <Drawer open={menubarToggle} onClose={() => setMenubarToggle(false)} variant='persistent'>
                <Box sx={{ backgroundColor: '#212529', color: 'white', height: '100%', display: 'flex', flexDirection: 'column' }}>
                   <Stack direction='row' sx={{ alignItems: 'center', padding: '20px' }}>
                      <Diamond sx={{ fontSize: '40px', marginRight: '10px' }} />
