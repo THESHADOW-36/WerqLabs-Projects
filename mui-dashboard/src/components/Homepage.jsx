@@ -22,7 +22,7 @@ const sxDashboard = {
 const miniDetailLay = {
   boxShadow: '0px 0px 4px -1.7px gray',
   borderRadius: '8px',
-  height: { xs: '100px', md: '92px' },
+  height: { xs: '100px', sm: '120px', md: '92px' },
   display: 'flex',
   alignItems: 'center',
   padding: { xs: '0px 30px', md: '0px 16px' },
@@ -30,13 +30,13 @@ const miniDetailLay = {
 }
 
 const mdTitle = {
-  fontSize: '16px',
+  fontSize: { xs: '16px', sm: '22px', md: '16px' },
   fontWeight: '600',
   letterSpacing: '-0.5px'
 }
 
 const mdCount = {
-  fontSize: '16px',
+  fontSize: { xs: '16px', sm: '22px', md: '16px' },
   fontWeight: '600',
   color: '#28a745',
   marginTop: '5px'
@@ -46,35 +46,35 @@ const visitTableLayout = {
   boxShadow: '0px 0px 4px -1.7px gray',
   backgroundColor: 'white',
   borderRadius: '8px',
-  width: { xs: '91%', md: '100%' },
+  width: { xs: '91%', sm: '100%' },
   height: { md: '342px' },
   margin: '22px auto 0px'
 }
 
 const vtTopHeader = {
   display: 'flex',
-  flexDirection: { xs: 'column', md: 'row' },
+  flexDirection: { xs: 'column', sm: 'row' },
   justifyContent: 'space-between',
   alignItems: 'center'
 }
 
 const vtTitle = {
-  fontSize: '18px',
+  fontSize: { xs: '18px', sm: '22px', md: '18px' },
   fontWeight: '600',
   letterSpacing: '-0.4px',
   marginBottom: { xs: '10px', md: '0px' }
 }
 
 const vtTextField = {
-  width: { xs: '200px', md: '244px' },
-  '& .MuiInputBase-root': { height: '34px', fontSize: '14px' }
+  width: { xs: '200px', sm: '244px' },
+  '& .MuiInputBase-root': { height: { xs: '34px', sm: '40', md: '34px' }, fontSize: { xs: '14px', sm: '18px', md: '14px' } },
 }
 
 const vtButton = {
   height: '100%',
-  fontSize: { xs: '14px', md: '12px' },
+  fontSize: { xs: '14px', sm: '18px', md: '12px' },
   textTransform: 'capitalize',
-  height: '34px',
+  height: { xs: '34px', sm: '40', md: '34px' },
   letterSpacing: '0.5px',
   paddingRight: '9px',
   paddingLeft: '9px',
@@ -88,18 +88,20 @@ const vtTable = {
 }
 
 const vtTableHead = {
-  padding: '14px 10px',
-  width: '16%',
-  fontWeight: '600',
   color: '#363636',
+  width: '16%',
+  fontSize: { xs: '14px', sm: '18px', md: '14px' },
+  fontWeight: '600',
   letterSpacing: '-0.3px',
-  textWrap: 'noWrap'
+  textWrap: 'noWrap',
+  padding: { xs: '14px 10px', sm: '16px 10px', md: '14px 10px' }
 }
 
 const vtTableBody = {
-  padding: '5px 0px 4px 10px',
+  color: '#545454',
+  fontSize: { xs: '14px', sm: '18px', md: '14px' },
   textWrap: 'nowrap',
-  color: '#545454'
+  padding: { xs: '8px 0px 8px 10px', sm: '10px 0px 10px 10px', md: '5px 0px 5px 10px' }
 }
 
 const vtPagination = {
@@ -110,7 +112,7 @@ const vtPagination = {
 
 const vtpPgDispalyer = {
   color: '#212529',
-  fontSize: '14px',
+  fontSize: { xs: '14px', sm: '18px', md: '14px' },
   padding: '22px 16px 20px 16px'
 }
 
@@ -123,8 +125,8 @@ const vtPNav = {
 const vtPNavArrows = {
   backgroundColor: '#b6c3ef',
   borderRadius: '1px',
-  width: '18px',
-  height: '18px',
+  width: { xs: '18px', sm: '22px', md: '18px' },
+  height: { xs: '18px', sm: '22px', md: '18px' },
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
@@ -134,9 +136,9 @@ const vtPNavArrows = {
 const vtPNum = {
   backgroundColor: '#ebebeb',
   borderRadius: '1px',
-  width: '22px',
-  height: '22px',
-  fontSize: '14px',
+  width: { xs: '22px', sm: '26px', md: '22px' },
+  height: { xs: '22px', sm: '26px', md: '22px' },
+  fontSize: { xs: '14px', sm: '18px', md: '14px' },
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
@@ -152,22 +154,22 @@ const Homepage = () => {
     {
       title: 'Total Entries',
       count: '361',
-      logo: <Box sx={{ backgroundColor: '#fff1da', borderRadius: '50px', width: '60px', height: '60px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><People sx={{ fontSize: '36px', color: '#fab044' }} /></Box>
+      logo: <Box sx={{ backgroundColor: '#fff1da', borderRadius: '50px', width: { xs: '60px', sm: '75px', md: '60px' }, height: { xs: '60px', sm: '75px', md: '60px' }, display: 'flex', alignItems: 'center', justifyContent: 'center' }}> <People sx={{ fontSize: { xs: '36px', sm: '46px', md: '36px' }, color: '#fab044' }} /></Box >
     },
     {
       title: 'Vehicles',
       count: '5',
-      logo: <Box sx={{ backgroundColor: '#e4e4fe', borderRadius: '50px', width: '60px', height: '60px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><LocalShipping sx={{ fontSize: '36px', color: '#767af5' }} /></Box>
+      logo: <Box sx={{ backgroundColor: '#e4e4fe', borderRadius: '50px', width: { xs: '60px', sm: '75px', md: '60px' }, height: { xs: '60px', sm: '75px', md: '60px' }, display: 'flex', alignItems: 'center', justifyContent: 'center' }}><LocalShipping sx={{ fontSize: { xs: '36px', sm: '46px', md: '36px' }, color: '#767af5' }} /></Box>
     },
     {
       title: 'Check In',
       count: '361',
-      logo: <Box sx={{ backgroundColor: '#fdeae4', borderRadius: '50px', width: '60px', height: '60px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><DomainVerification sx={{ fontSize: '36px', color: '#f09e7f' }} /></Box>
+      logo: <Box sx={{ backgroundColor: '#fdeae4', borderRadius: '50px', width: { xs: '60px', sm: '75px', md: '60px' }, height: { xs: '60px', sm: '75px', md: '60px' }, display: 'flex', alignItems: 'center', justifyContent: 'center' }}><DomainVerification sx={{ fontSize: { xs: '36px', sm: '46px', md: '36px' }, color: '#f09e7f' }} /></Box>
     },
     {
       title: 'Check Out',
       count: '361',
-      logo: <Box sx={{ backgroundColor: '#f7e4fe', borderRadius: '50px', width: '60px', height: '60px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><Output sx={{ fontSize: '36px', color: '#b039db' }} /></Box>
+      logo: <Box sx={{ backgroundColor: '#f7e4fe', borderRadius: '50px', width: { xs: '60px', sm: '75px', md: '60px' }, height: { xs: '60px', sm: '75px', md: '60px' }, display: 'flex', alignItems: 'center', justifyContent: 'center' }}><Output sx={{ fontSize: { xs: '36px', sm: '46px', md: '36px' }, color: '#b039db' }} /></Box>
     }
   ]
 
@@ -201,7 +203,7 @@ const Homepage = () => {
     <Box sx={sxDashboard}>
       <Grid container spacing={3} marginTop='-2px'>
         {dbList1.map((db1) => (
-          <Grid item md={3} xs={11} sx={{ margin: 'auto' }}>
+          <Grid item xs={11} sm={6} md={3} sx={{ margin: 'auto' }}>
             <Paper sx={miniDetailLay}>
               {db1.logo}
               <Box sx={{ marginLeft: { xs: '26px', md: '16px' } }}>
@@ -218,7 +220,7 @@ const Homepage = () => {
           <Box sx={vtTopHeader}>
             <Typography sx={vtTitle}>Recent Visits</Typography>
             <Box>
-              <TextField sx={vtTextField} InputProps={{ endAdornment: (<InputAdornment><Search sx={{ fontSize: '20px' }} /></InputAdornment>) }} size='small' placeholder='Search...' />
+              <TextField sx={vtTextField} InputProps={{ endAdornment: (<InputAdornment><Search sx={{ fontSize: { xs: '20px', sm: '26px', md: '20px' } }} /></InputAdornment>) }} size='small' placeholder='Search...' />
               <Button variant='contained' sx={vtButton}>Check In</Button>
             </Box>
           </Box>

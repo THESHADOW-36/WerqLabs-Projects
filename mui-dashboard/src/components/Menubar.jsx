@@ -16,17 +16,22 @@ const menuBarLayout = {
 const mbLogoLayout = {
    justifyContent: { xs: 'space-between', md: 'flex-start' },
    alignItems: 'center',
-   padding: '20px'
+   padding: { xs: '20px', sm: '40px', md: '20px' }
+}
+
+const mbLogoText = {
+   display: 'flex',
+   alignItems: 'center'
 }
 
 const mbLogo = {
-   fontSize: '40px',
+   fontSize: { xs: '40px', sm: '60px', md: '40px' },
    marginRight: '10px'
 }
 
 const mbText = {
    fontWeight: '600',
-   fontSize: '30px',
+   fontSize: { xs: '30px', sm: '40px', md: '30px' },
    letterSpacing: '-1.8px',
    // marginLeft: '-30px'
 }
@@ -46,13 +51,13 @@ const mbList1 = {
 const mbList1Icon = {
    color: '#9ca3af',
    alignItems: 'center',
-   padding: '7px 0px 7px 4px'
+   padding: { xs: '7px 0px 7px 4px', sm: '15px 0px 15px 30px', md: '7px 0px 7px 4px' }
 }
 
 const mbList2Icon = {
    color: '#9ca3af',
    alignItems: 'center',
-   padding: '3px 0px 3px 4px'
+   padding: { xs: '3px 0px 3px 4px', sm: '11px 0px 11px 30px', md: '3px 0px 3px 4px' }
 }
 
 const mbListLogo = {
@@ -60,7 +65,7 @@ const mbListLogo = {
 }
 
 const mbListName = {
-   fontSize: '14px',
+   fontSize: { xs: '14px', sm: '24px', md: '14px' },
    fontWeight: '500'
 }
 
@@ -122,37 +127,37 @@ const Menubar = ({ menubarToggle, setMenubarToggle, menuToggle }) => {
    const menuList1 = [
       {
          name: 'Dashboard',
-         logo: <DashboardOutlined sx={{ fontSize: '26px' }} />
+         logo: <DashboardOutlined sx={{ fontSize: { xs: '26px', sm: '40px', md: '26px' } }} />
       },
       {
          name: 'Requests',
-         logo: <PendingActions sx={{ fontSize: '26px' }} />
+         logo: <PendingActions sx={{ fontSize: { xs: '26px', sm: '40px', md: '26px' } }} />
       },
       {
          name: 'Vehicles',
-         logo: <LocalShipping sx={{ fontSize: '26px' }} />
+         logo: <LocalShipping sx={{ fontSize: { xs: '26px', sm: '40px', md: '26px' } }} />
       },
       {
          name: 'Visitors',
-         logo: <People sx={{ fontSize: '26px' }} />
+         logo: <People sx={{ fontSize: { xs: '26px', sm: '40px', md: '26px' } }} />
       },
       {
          name: 'Check In',
-         logo: <CheckBoxOutlined sx={{ fontSize: '26px' }} />
+         logo: <CheckBoxOutlined sx={{ fontSize: { xs: '26px', sm: '40px', md: '26px' } }} />
       }
    ];
    const menuList2 = [
       {
          name: 'Settings',
-         logo: <SettingsOutlined sx={{ fontSize: '26px' }} />
+         logo: <SettingsOutlined sx={{ fontSize: { xs: '26px', sm: '40px', md: '26px' } }} />
       },
       {
          name: 'Help & Support',
-         logo: <HelpOutlineOutlined sx={{ fontSize: '26px' }} />
+         logo: <HelpOutlineOutlined sx={{ fontSize: { xs: '26px', sm: '40px', md: '26px' } }} />
       },
       {
          name: 'Logout',
-         logo: <LogoutOutlined sx={{ fontSize: '26px' }} />
+         logo: <LogoutOutlined sx={{ fontSize: { xs: '26px', sm: '40px', md: '26px' } }} />
       }
    ];
 
@@ -164,12 +169,14 @@ const Menubar = ({ menubarToggle, setMenubarToggle, menuToggle }) => {
                {menubarToggle ?
                   <Box sx={menuBarLayout}>
                      <Stack direction='row' sx={mbLogoLayout}>
-                        <Diamond sx={mbLogo} />
-                        <Typography variant='h5' sx={mbText}>
-                           Logo
-                        </Typography>
+                        <Box sx={mbLogoText}>
+                           <Diamond sx={mbLogo} />
+                           <Typography variant='h5' sx={mbText}>
+                              Logo
+                           </Typography>
+                        </Box>
                         <IconButton sx={mbClose}>
-                           <Close onClick={menuToggle} />
+                           <Close sx={{ fontSize: '40px' }} onClick={menuToggle} />
                         </IconButton>
                      </Stack>
                      <List sx={mbList1}>
