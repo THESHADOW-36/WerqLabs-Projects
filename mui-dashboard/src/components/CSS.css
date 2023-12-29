@@ -1,5 +1,5 @@
-* {
-   border: 1px solid black;
-   text-transform: capitalize;
-   justify-content: space-between;
+.MuiFormLabel-asterisk {
+   color: red;
+   font-size: 16px;
+   font-weight: 900;
 }
