@@ -49,6 +49,13 @@ const checkIn = {
 
 const ciStepper = {
    width: { xs: '100%', sm: '80%', md: '70%' },
+   display: { xs: 'none', sm: 'block' },
+   padding: '30px 0px 29px 0px',
+   margin: 'auto'
+}
+const ciStepper2 = {
+   width: { xs: '100%', sm: '80%', md: '70%' },
+   display: { xs: 'block', sm: 'none' },
    padding: '30px 0px 29px 0px',
    margin: 'auto'
 }
@@ -195,7 +202,20 @@ const CheckIn = () => {
    return (
       <Box sx={checkIn}>
          <Box sx={ciStepper}>
-            <Stepper activeStep={stepNav} alternativeLabel={false} sx={{ marginLeft: { xs: '16px', sm: '0', md: '0' } }}>
+            <Stepper activeStep={stepNav} sx={{ marginLeft: { xs: '16px', sm: '0', md: '0' } }}>
+               <Step>
+                  <StepLabel><Typography sx={ciStepperText}>Visitor CheckIn</Typography></StepLabel>
+               </Step>
+               <Step>
+                  <StepLabel><Typography sx={ciStepperText}>Vehicle CheckIn</Typography></StepLabel>
+               </Step>
+               <Step>
+                  <StepLabel><Typography sx={ciStepperText}>Visitor Details</Typography></StepLabel>
+               </Step>
+            </Stepper>
+         </Box>
+         <Box sx={ciStepper2}>
+            <Stepper activeStep={stepNav} alternativeLabel={true} sx={{ marginLeft: { xs: '16px', sm: '0', md: '0' } }}>
                <Step>
                   <StepLabel><Typography sx={ciStepperText}>Visitor CheckIn</Typography></StepLabel>
                </Step>
