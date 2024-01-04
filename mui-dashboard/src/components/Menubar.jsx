@@ -179,6 +179,7 @@ const Menubar = ({ menubarToggle, setMenubarToggle, menuToggle }) => {
                            <Close sx={{ fontSize: '40px' }} onClick={menuToggle} />
                         </IconButton>
                      </Stack>
+
                      <List sx={mbList1}>
                         {menuList1.map((ml, index) => (
                            <ListItemButton key={index} onClick={() => menuNavigate(ml)}>
@@ -191,6 +192,7 @@ const Menubar = ({ menubarToggle, setMenubarToggle, menuToggle }) => {
                            </ListItemButton>
                         ))}
                      </List>
+
                      <List sx={{ marginTop: 'auto', padding: 0 }} >
                         {menuList2.map((ml, index) => (
                            <ListItemButton key={index}>
