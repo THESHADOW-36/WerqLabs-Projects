@@ -25,12 +25,13 @@ exports.register = asyncHandler(async (req, res, next) => {
 exports.login = asyncHandler(async (req, res, next) => {
     const {email, password} = req.body;
     
-    // get User
+    // get User                        ??? what is the use of select ???
     const user = await User.findOne({email}).select('+password');
 
     // User not found
     if(!user) {
-        return next(new ErrorResponse(`User not found with email ${email}`, 401));
+        return next(new ErrorResponse(`User not found with email ${email}`, 401)); 
+        //The 401 (Unauthorized) status code indicates that the request has not been applied because it lacks valid authentication credentials for the target resource.
     }
 
     // comapre password
@@ -45,12 +46,11 @@ exports.login = asyncHandler(async (req, res, next) => {
 
 // Genrate JWT web token and cookies and send to res
 const sendTokenResponse = (user, status, res) => {
-    // get token
+    // get token      ??? From where jwt get access ??? - Models...
     const token = user.getJWTWebToken();
 
     console.log('Date.now : ', Date.now());
     console.log('process.env.JWT_COOKIE_EXPIRE : ', process.env.JWT_COOKIE_EXPIRE);
-
     console.log('expire time : ', new Date(Date.now() + '30d'));
 
     const option = {

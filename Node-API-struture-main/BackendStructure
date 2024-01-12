@@ -1,0 +1,40 @@
+Folder Structure
+
+[backend]
+   |--index.js
+   |--seederjs
+   |--.env
+   |--[routes]
+         |--auth.js
+   |--[models]
+         |--User.js
+   |--[middleware]
+         |--async.js
+         |--auth.js
+         |--error.js
+         |--logger.js     ????????
+   |--[controllers]
+         |--auth.js
+   |--[config]
+         |--db.js
+   |--[utils]
+         |--errorResponse.js
+   |--[data]
+         |--user.json
+
+---------------------------------------------------------------
+
+// Import the packages
+
+Install 'express';
+Install 'morgan';
+Install 'colors';
+Install 'path';
+Install 'cookie-parser';
+
+
+Load env file:
+dotenv.config({path: './config/config.env'});
+
+// Create database connection
+connectDB();

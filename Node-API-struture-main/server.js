@@ -1,3 +1,4 @@
+// Import the packages
 const express = require('express');
 const dotenv = require('dotenv');
 // const logger = require('./middleware/logger');
@@ -10,6 +11,12 @@ const cookieParser = require('cookie-parser');
 
 // Load env file
 dotenv.config({path: './config/config.env'});
+// MONGO_URL = "mongodb+srv://poojavetal14:pooja123@cluster0.lvroul6.mongodb.net/werqlabs"
+// JWT_SECRET = "OmVetal"
+// JWT_TOKEN_SECRET_KEY = 'abc'
+// JWT_COOKIE_EXPIRE = 10776768766
+// JWT_TOKEN_EXPIRE = 23456789
+// NODE_ENV = 'production'
 
 // Create database connection
 connectDB();
@@ -44,7 +51,7 @@ const port = process.env.PORT || 5000;
 const server = app.listen(port, () => {
     console.log('Server is started'.yellow);
 });
-
+ 
 // Handle unhandle rejection
 process.on('unhandledRejection', (error, promise) => {
     console.log(`Error: ${error.message}`);
