@@ -7,15 +7,18 @@ const User = require('../models/User');
 // @access Public
 //                  ????
 exports.register = asyncHandler(async (req, res, next) => {
-    const { name, email, password, role } = req.body.userData;
-    console.log(name, email, password, role)
+    const { firstName, lastName, userName, dob, email, password, confirmPassword } = req.body.userData;
+    console.log(firstName, lastName, userName, dob, email, password, confirmPassword)
 
     // Register user
     const user = await User.create({
-        name,
-        email,
-        password,
-        role
+        firstName,
+        lastName, 
+        userName, 
+        dob, 
+        email, 
+        password, 
+        confirmPassword
     });
 
 
