@@ -15,7 +15,7 @@ mongoose.connect(process.env.MONGO_URL, {
 // Load modal
 const User = require('./models/User');
 
-// Read JSON form file
+// Read JSON form file                  ???????????
 const user = JSON.parse(fs.readFileSync(`${__dirname}/_data/users.json`, 'utf-8'));
 
 // Impored json object into database

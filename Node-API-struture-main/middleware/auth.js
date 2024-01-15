@@ -18,7 +18,7 @@ exports.protecter = asyncHandler(async(req, res, next) => {
     //     token = cookies.token;
     //  }
 
-    // console.log(token);
+    console.log(token);
 
     if(!token) {
         return next(new ErrorResponse('You dont have aceess to this request', 401));

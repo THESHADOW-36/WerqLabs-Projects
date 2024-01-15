@@ -12,7 +12,7 @@ const UserSchema = new mongoose.Schema({
         type: String,
         required: [true, 'Please provide email address'],
         unique: true,
-        match:[/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/, 'Please provide a valid emial']
+        match:[/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/, 'Please provide a valid email']
     },
     role: {
         type: String,
@@ -25,8 +25,8 @@ const UserSchema = new mongoose.Schema({
         minlength: [6, 'The password must be more than 6 character'],
         select: false
     },
-    resetPasswordToken: String,
-    restePasswordExpire: Date,
+    resetPasswordToken: String,  //???????
+    restePasswordExpire: Date,   //???????
     createdAt: {
         type: Date,
         default: Date.now
